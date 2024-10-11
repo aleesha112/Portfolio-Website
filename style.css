@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2a2a2a;
+  padding: 1em 0;
+  z-index: 100;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #ffcc00;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+  display: none;
+  font-size: 2em;
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row; /* Stack menu items vertically on small screens */
+    gap: 10px; /* Reduce gap between menu items */
+    display: none; /* Hide the menu by default */
+  }
+
+  nav ul.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon on small screens */
+  }
+
+  nav ul li a {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.page-section {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box {
+  background-color: #2a2a2a;
+  padding: 6em; /* Consistent padding */
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.5);
+  width: 90%; /* Consistent width */
+  max-width: 900px; /* Maximum width */
+  min-height: 400px; /* Set a minimum height for consistency */
+}
+
+/* Home Section Styles */
+.home-content {
+  display: flex; 
+  flex-direction: row; /* Side by side */
+  justify-content: space-between; /* Space between text and image */
+  align-items: center; /* Center vertically */
+}
+
+.text-section {
+  flex: 1; /* Take up available space */
+  padding-right: 30px; /* Space between text and image */
+  text-align: left; /* Align text to left */
+}
+
+.text-section h3 {
+  font-size: 1.5rem;
+  padding-bottom: 8px;
+}
+
+.text-section h1 {
+  font-size: 3.5em; /* Larger title */
+  margin-bottom: 10px;
+  color: #ffcc00; /* Yellow title */
+}
+
+.text-section p {
+  font-size: 1em; /* Increased paragraph text size */
+  margin-bottom: 30px;
+  color: #fff; /* White paragraph text */
+}
+
+.text-section .btn {
+  display: inline-block;
+  padding: 12px 25px; /* Increased button size */
+  margin-right: 15px;
+  background-color: #ffcc00; /* Yellow button */
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.text-section .btn:hover {
+  background-color: #d9d3c9; /* Darker yellow on hover */
+}
+
+.image-section {
+  flex: 1; /* Take up available space */
+  text-align: right; /* Align image to right */
+}
+
+.home-content img {
+  width: 105%; /* Responsive image size */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.7); /* Yellow shadow */
+}
+
+/* Social Links */
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center; /* Center social icons */
+  gap: 50px; /* Space between icons */
+  margin-top: 50px; /* Space above social links */
+  bottom: 5px; /* Adjust bottom position */
+}
+
+.social-icon {
+  color: #ffcc00; /* Yellow icons */
+  font-size: 2em; /* Icon size */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Transition effect */
+}
+
+.social-icon:hover {
+  color: #fff; /* Change color on hover */
+}
+
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column; /* Stack vertically on small screens */
+    text-align: center; /* Center text */
+  }
+
+  .text-section {
+    padding-right: 0; /* Remove padding on smaller screens */
+    margin-bottom: 20px; /* Space below text */
+  }
+
+  .image-section img {
+    width: 100%; /* Full width image on small screens */
+  }
+
+  .social-links {
+    bottom: 10px; /* Adjust bottom position */
+  }
+}
+
+/* about section */
+
+/* About Section */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+  padding: 4em; /* Adjust padding as needed */
+  background-color: #2a2a2a; /* Same background as the content box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.5); /* Shadow effect */
+  width: 90%; /* Full width */
+  max-width: 900px; /* Maximum width */
+  margin: 0 auto; /* Center the section on the page */
+}
+
+.image-section {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Circle shape */
+  background-color: #594f24; /* Yellow background */
+  padding: 10px; /* Padding inside the circle */
+  /* Remove any box shadow or border here */
+}
+
+.text-section {
+  flex: 2;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.text-section h1 {
+  color: #ffcc00; /* Yellow text for the title */
+}
+
+.text-section p {
+  margin-bottom: 20px;
+  color: #fff; /* White text for the description */
+}
+
+
+.skills-section {
+  margin-top: 20px; /* Space above skills section */
+}
+
+.skill {
+  margin-bottom: 15px; /* Space between skills */
+  position: relative; /* Position for percentage label */
+}
+
+.progress {
+  background-color: white; /* Background for the progress bar */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  position: relative; /* Position for percentage label */
+}
+
+.progress-bar {
+  height: 10px; /* Height of the progress bar */
+  background-color: #ffcc00; /* Yellow color for the filled part */
+  border-radius: 5px; /* Rounded corners */
+  transition: width 0.4s ease; /* Smooth transition */
+}
+
+.percentage {
+  position: absolute; /* Positioning the percentage label */
+  right: 5px; /* Position label close to the right */
+  top: -18px; /* Move label above the progress bar */
+  color: #fff; /* White color for percentage text */
+  font-size: 0.9em; /* Font size for percentage text */
+}
+
+h2{
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack vertically on small screens */
+    text-align: center; /* Center text */
+  }
+
+  .text-section {
+    padding-left: 0; /* Remove padding on smaller screens */
+  }
+}
+
+/* service section */
+
+.services-content {
+  background-color: #2a2a2a; /* Background color for the services box */
+  padding: 4em; /* Padding for the content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.5); /* Shadow effect */
+  text-align: center; /* Center text */
+  max-width: 900px; /* Maximum width */
+  margin: 0 auto; /* Center the box horizontally */
+}
+
+h1 {
+  color: #ffcc00; /* Yellow heading */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+p {
+  color: #fff; /* White paragraph text */
+  margin-bottom: 30px; /* Space below paragraph */
+}
+
+.services-row {
+  display: flex; /* Flexbox for the row of services */
+  justify-content: space-around; /* Space between boxes */
+  flex-wrap: wrap; /* Wrap boxes on smaller screens */
+}
+
+.service-box {
+  background-color: #1c1c1c; /* Background color for service boxes */
+  padding: 20px; /* Padding inside each box */
+  border-radius: 10px; /* Rounded corners */
+  width: 30%; /* Width for each box */
+  margin: 10px 0; /* Margin between boxes */
+  text-align: center; /* Center text inside boxes */
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3); /* Shadow effect for boxes */
+  transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.service-box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.service-icon {
+  font-size: 50px; /* Size for service icons */
+  color: #ffcc00; /* Yellow color for icons */
+  margin-bottom: 15px; /* Space below icon */
+}
+
+.service-box h3 {
+  color: #ffcc00; /* Yellow heading for service */
+  margin-bottom: 10px; /* Space below service title */
+}
+
+.service-box p {
+  color: #fff; /* White description text */
+}
+
+
+/* project section */
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for multiple rows */
+  justify-content: center; /* Center the project boxes */
+  gap: 20px; /* Space between project boxes */
+}
+
+.project-box {
+  background-color: #2a2a2a; /* Background color for the project box */
+  padding: 20px; /* Padding inside the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.5); /* Shadow for project box */
+  width: calc(25% - 20px); /* Width for four boxes per row, adjusting for gap */
+  text-align: center; /* Center text in project boxes */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center horizontally */
+}
+
+.project-image {
+  width: 150px; /* Set a fixed width for images */
+  height: 100px; /* Set a fixed height for images */
+  object-fit: cover; /* Maintain aspect ratio while covering the box */
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.7); /* Shadow for images */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.project-link {
+  display: inline-block; /* Make the link a block for better styling */
+  margin-top: 10px; /* Spacing above the link */
+  padding: 8px 15px; /* Padding for the link */
+  background-color: #ffcc00; /* Yellow background */
+  color: black; /* Black text */
+  text-decoration: none; /* No underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+.project-link:hover {
+  background-color: #d9d3c9; /* Darker yellow on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project-box {
+      width: calc(50% - 20px); /* Two boxes per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-box {
+      width: 100%; /* Full width on very small screens */
+  }
+}
+
+.contact-content {
+  background-color: #2a2a2a;
+  padding: 4em;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.5);
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-content h1 {
+  color: #fff;
+}
+
+.contact-content input, .contact-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-content button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-content button:hover {
+  background-color: #e6b800;
+}
+
+.success-message {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-icon {
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+}

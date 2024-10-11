@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Portfolio</title>
+        <link rel="stylesheet" href="style.css"> <!-- Your CSS file -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    </head>
+<body>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+ <!-- home section -->
+   
+ <section id="home" class="page-section">
+    <div class="content-box">
+        <div class="home-content">
+            <div class="text-section">
+                <h1>I'm Aleesha Afzal</h1>
+                <h3>I’m a Front-End Developer, Content Writer, and GIS Analyst.</h3>
+                <p>
+                    Here you will find my work, projects, and experiences. I am passionate about creating beautiful and functional user interfaces.
+                </p>
+                <a href="my cv.pdf" class="btn">Resume</a>
+                <a href="#projects" class="btn">Portfolio</a>
+            </div>
+            <div class="image-section">
+                <img src="dp image.jpeg" alt="Aleesha Afzal">
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aleesha-afzal-989454319/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/amnaa34_470" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/03055967611" target="_blank" class="social-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://github.com/aleesha112" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>        
+    </div>
+</section>
+
+     <!-- about me section    -->
+    
+     <section id="about" class="page-section">
+        <div class="about-content">
+            <div class="image-section">
+                <img src="about me .png" alt="Your Image" class="about-image" />
+            </div>
+            <div class="text-section">
+                <h1>About Me</h1>
+                <p>As a passionate Front-End Developer, I specialize in creating visually appealing and user-friendly interfaces. With a keen eye for detail, I bring designs to life using the latest web technologies. My skills as a Content Writer allow me to craft compelling narratives that enhance user engagement, while my expertise as a GIS Analyst enables me to leverage geographical data for informed decision-making.</p>
+    
+                <!-- Skills Section -->
+                 <h2> Skills </h2>
+                <div class="skills-section">
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                            <span class="percentage">85%</span> <!-- Percentage label -->
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                            <span class="percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                            <span class="percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Content Writing</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                            <span class="percentage">85%%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- service section -->
+
+   
+            <section id="services" class="page-section">
+                <div class="services-content">
+                    <h1>Services</h1>
+                    <p>As a versatile professional, I offer a range of services to meet your needs. Whether you're looking for a dynamic website, engaging content, or expert GIS analysis, I've got you covered.</p>
+                    <div class="services-row">
+                        <div class="service-box">
+                            <i class="fas fa-code service-icon"></i>
+                            <h3>Web Development</h3><br>
+                            <p class="service-description">Creating responsive and user-friendly websites using the latest technologies to enhance user experience and engagement.</p>
+                        </div>
+                        <div class="service-box">
+                            <i class="fas fa-pencil-alt service-icon"></i>
+                            <h3>Content Writing</h3>
+                            <br>
+                            <p class="service-description">Crafting compelling narratives and content that engages your audience and drives conversions, tailored to your brand's voice.</p>
+                        </div>
+                        <div class="service-box">
+                            <i class="fas fa-map-marked-alt service-icon"></i>
+                            <h3>GIS Analyst</h3><br>
+                            <p class="service-description">Leveraging geographical data for informed decision-making and analysis, providing insights to enhance strategic planning.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+           <!-- projects section -->
+<section id="projects" class="page-section">
+    <div class="services-content"> <!-- Use the same class as services -->
+        <h1 class="section-title">My Projects</h1>
+        <p class="section-description">Here are some of the projects I've worked on:</p>
+        
+        <div class="projects-container">
+            <div class="project-box">
+                <img src="calculator.png" alt="Themed Calculator" class="project-image">
+                <h3>Themed Calculator</h3>
+                <a href="https://velvety-vacherin-5559a0.netlify.app/" target="_blank" class="project-link">You can check it here</a>
+            </div>
+            
+            <div class="project-box">
+                <img src="to-do app.png" alt="To-Do List App" target="_blank" class="project-image">
+                <h3>To-Do List Web App</h3>
+                <a href="https://6707f21ad423040acb638a73--steady-phoenix-255220.netlify.app/" class="project-link">You can check it here</a>
+            </div>
+            
+            <div class="project-box">
+                <img src="recipe website.png" alt="Recipe Website" target="_blank" class="project-image">
+                <h3>Recipe Website</h3>
+                <a href="https://66dfdcaae6aa0709ca41872b--magenta-cucurucho-e95f4d.netlify.app/#RECIPES" class="project-link">You can check it here</a>
+            </div>
+            
+            <div class="project-box">
+                <img src="blog post.png" alt="Blog Post" target="_blank" class="project-image">
+                <h3>Blog Post Content</h3>
+                <a href="https://shimmering-gelato-4fb652.netlify.app/blog.pdf" class="project-link">You can check it here</a>
+            </div>
+
+            <div class="project-box">
+                <img src="website content.png" alt="Website Content" target="_blank" class="project-image">
+                <h3>Website Content</h3>
+                <a href="Steprides.pdf" class="project-link">You can check it here</a>
+            </div>
+            
+            <div class="project-box">
+                <img src="leaflet.png" alt="Leaflets Projects" target="_blank" class="project-image">
+                <h3>Leaflets Projects</h3>
+                <a href="https://66f6cb38cde35b7ec1bbc525--jocular-kitten-039118.netlify.app/" class="project-link">You can check it here</a>
+            </div>
+
+            <div class="project-box">
+                <img src="Screenshot 2024-10-04 200347.png" alt="Population Density Map" target="_blank" class="project-image">
+                <h3>Population Density Map</h3>
+                <a href="#" class="project-link">You can check it here</a>
+            </div>
+
+            <div class="project-box">
+                <img src="portfolio website.png" alt="Equal Interval Classification"target="_blank"  class="project-image">
+                <h3>Portfolio Website</h3>
+                <a href="https://shimmering-gelato-4fb652.netlify.app/#portfolio" class="project-link">You can check it here</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="page-section">
+    <div class="contact-content">
+        <h1 class="section-title">Contact Me</h1>
+        <p class="section-description">Feel free to reach out through the form below:</p>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" onsubmit="showConfirmation(event)">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button type="submit">Submit</button>
+        </form>
+<br>
+<br>
+        <div id="confirmation-message" class="confirmation-message" style="display:none;">
+            <h3>Thank you!</h3>
+            <p>Your message has been sent. <span class="envelope-icon">📩</span></p>
+        </div>
+    </div>
+</section>
+
+
+            
+            
+            
+            
+    
+    
+          
+   
+
+
+    <script src="script.js"></script>
+</body>
+</html>
